@@ -1,0 +1,153 @@
+@import 'settings/reset';
+@import 'settings/colors';
+@import 'settings/fonts';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-base
+}
+
+
+.nav-list-login-container {
+  width: 95vw;
+  height: 10%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-list-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list-element {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+
+  a {
+    text-decoration: none;
+    color: $font-primary
+  }
+}
+
+.home-header-container {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 640px) {
+    justify-content: flex-start;
+  }
+}
+
+.home-header-action {
+  width: 50%;
+  text-align: center;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home-header-title {
+  font-size: 30px;
+}
+
+.home-header-img-container {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.home-header-btn {
+  margin: 1%;
+  padding: 10px;
+  border: $background-secondary 1px solid;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color: $font-primary
+  }
+}
+
+.home-article-columns {
+  display: flex;
+
+  width: 95vw;
+  justify-content: center;
+  background: $accent-color;
+  @media screen and (min-width: 640px) {
+    justify-content: flex-start;
+  }
+}
+
+.home-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2%;
+
+  img {
+    height: 5rem;
+  }
+
+  h1 {
+    color: $background-secondary;
+    font-size: xx-large;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: $font-alt;
+    padding: 7%
+
+  }
+}
+
+.home-steps-columns {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  width: 95vw;
+  background: $background-secondary;
+}
+
+.home-article-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2%;
+
+  img {
+    height: 5rem;
+  }
+
+  h1 {
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  h2 {
+
+  }
+
+}
+
+
+
+
